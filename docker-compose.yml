@@ -1,0 +1,11 @@
+services:
+  ensign:
+    build: .
+    container_name: ensign_os
+    ports:
+      - "5900:5900"
+    environment:
+      - DISPLAY=:99
+      - SCREEN_GEOMETRY=1920x1080x16
+    stdin_open: true
+    tty: true
